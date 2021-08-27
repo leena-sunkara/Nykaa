@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_50">
+
+    <RelativeLayout
+        android:id="@+id/loginRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/close"
+            android:text="@string/login_register"
+            android:textColor="@color/grey_800"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/numberEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginRegister"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:autofillHints="true"
+        android:background="@drawable/rectangle_pink_outline"
+        android:hint="@string/enter_phone_email"
+        android:inputType="text"
+        android:padding="@dimen/dp_14"
+        android:textAlignment="center"
+        android:textColor="@color/grey_800"
+        android:textColorHint="@color/grey_600"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/proceed"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreement"
+            android:textColor="@color/grey_600" />
+
+        <TextView
+            android:id="@+id/tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/agreement"
+            android:text="@string/tc"
+            android:textColor="@color/grey_600" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_2"
+            android:layout_alignBottom="@id/tc"
+            android:layout_toEndOf="@id/agreement"
+            android:background="@drawable/line"
+            android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/grey_400"
+        android:padding="@dimen/dp_15"
+        android:text="@string/proceed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

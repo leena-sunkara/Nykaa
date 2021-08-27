@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/close"
+            android:text="@string/register"
+            android:textColor="@color/grey_800"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/grey_200"
+        android:padding="@dimen/dp_15"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:text="@string/reward"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/choosePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_15"
+        android:backgroundTint="@color/pink"
+        android:hint="@string/choose_password"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:inputType="text"
+        android:padding="@dimen/dp_10"
+        android:id="@+id/fullName"
+        android:layout_margin="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:hint="@string/full_name"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:padding="@dimen/dp_10"
+        android:id="@+id/mobileNumber"
+        android:layout_margin="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:hint="@string/mobile_number"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:padding="@dimen/dp_20"
+        android:text="@string/register"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/agreement"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dp_125"
+        android:layout_height="@dimen/dp_2"
+        android:background="@drawable/line" />
+
+</LinearLayout>
